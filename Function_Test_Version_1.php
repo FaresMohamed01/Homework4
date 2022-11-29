@@ -40,7 +40,7 @@
 	                  VALUES ('$first_name','$last_name', '$states', '$city', '$borough', '$username', '$password')" );
 	
 	        echo "Success";
-		      header("Location:UserLogin.php");
+		header("Location:UserLogin.php");
 	    }
  
    }
