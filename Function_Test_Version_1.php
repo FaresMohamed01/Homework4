@@ -1,12 +1,13 @@
 <?php 
-	$r = True;
-	$first_name = $_POST['f_name'];
-	$last_name = $_POST['l_name'];
-	$states = $_POST['state'];
-	$city = $_POST['city'];
-	$borough = $_POST['borough'];
-	$username = $_POST['username'];
-	$password = $_POST['psw'];
+
+  $r = True;
+  $first_name = $_POST['f_name'];
+  $last_name = $_POST['l_name'];
+  $states = $_POST['state'];
+  $city = $_POST['city'];
+  $borough = $_POST['borough'];
+  $username = $_POST['username'];
+  $password = $_POST['psw'];
 
   function Post_Account ($first_name , $last_name, $states, $city, $borough, $username, $password, $r){
       $db = mysqli_connect("127.0.0.1", "root", "f7aaa8re9s", "subways");
@@ -29,8 +30,8 @@
     		$r = False;
     	?>
       
-<meta http-equiv="refresh" content="5; url='CreateAccount.php'" />
-<?php
+	<meta http-equiv="refresh" content="5; url='CreateAccount.php'" />
+	<?php
          }
 	    }
 	
@@ -42,5 +43,5 @@
 		      header("Location:UserLogin.php");
 	    }
  
-    }
+   }
 ?>
